@@ -1,0 +1,6 @@
+@IceCube_HostAddress = http://localhost:5295
+
+GET {{IceCube_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
