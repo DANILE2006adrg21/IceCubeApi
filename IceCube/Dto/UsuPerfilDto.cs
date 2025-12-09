@@ -40,7 +40,7 @@ namespace IceCube.Dto
 
 
         // 🔥 NUEVOS CAMPOS
-        public string? strOcupacion { get; set; }
+        public string? strOcupacion { get; set; }   
         public string? strEscuelaEmpresa { get; set; }
         public string? strObjetivo { get; set; }
         public string? strSituaciones { get; set; }
