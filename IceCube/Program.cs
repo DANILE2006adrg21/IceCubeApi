@@ -46,6 +46,7 @@ app.MapGet("/health/db", async (IceCube_Apicontext db) =>
         : Results.Problem("❌ No se pudo conectar con la base de datos"));
 
 // 🔹 7. Run
-app.Run();
+var port = Environment.GetEnvironmentVariable("PORT") ?? "3000";
+app.Run($"http://0.0.0.0:{port}");
 
 
