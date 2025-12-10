@@ -112,6 +112,24 @@ namespace IceCube.Controllers
                 UserId = user.Id
             });
         }
+
+        // ============================
+        // 🔹 GET REGISTRO (Ver usuarios registrados)
+        // ============================
+        [HttpGet("register")]
+        public async Task<ActionResult<IEnumerable<Usuario>>> GetRegisteredUsers()
+        {
+            return await _context.Usuarios.ToListAsync();
+        }
+
+        // ============================
+        // 🔹 GET LOGIN (Ver datos para pruebas)
+        // ============================
+        [HttpGet("login")]
+        public async Task<ActionResult<IEnumerable<Usuario>>> GetLoginUsers()
+        {
+            return await _context.Usuarios.ToListAsync();
+        }
     }
 }
 
